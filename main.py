@@ -3,6 +3,7 @@ import pandas as pd
 import config
 import sentiment_analysis
 import classification 
+import filter
 def connexion():
     con= mysql.connector.connect(
         host=config.HOST,
