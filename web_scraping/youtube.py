@@ -3,14 +3,12 @@ import datetime
 import sys
 from urllib.error import HTTPError
 import csv
+import config
 
 def run(id_source, chaine, file):
     api_service_name = "youtube"
-    api_version = "v3"
-    DEVELOPER_KEY = "AIzaSyDRMyTjsP3BOeyDrf1qfO4yBn7B-GZRLxs"
-    d1=datetime.datetime.now()
-    d2=d1.replace(year = d1.year - 1)
-    youtube = googleapiclient.discovery.build(api_service_name, api_version, developerKey = DEVELOPER_KEY)
+
+    youtube = googleapiclient.discovery.build(api_service_name, config.API_VERSION, developerKey = config.DEVELOPER_KEY)
 
     request1 = youtube.channels().list(
             id=chaine,
