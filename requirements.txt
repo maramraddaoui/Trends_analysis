@@ -1,2 +1,9 @@
 Python==2.7.18
 emoji==1.7.0
+sentencepiece==0.1.96
+transformers==4.18.0
+torch==1.11.0
+tensorflow-text==2.8.2
+tensorflow==2.8.0
+facebook-scraper==0.2.55
+mysql-connector-python==8.0.28
